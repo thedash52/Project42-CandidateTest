@@ -1,0 +1,23 @@
+{
+  "name": "angular7-node-server",
+  "version": "1.0.0",
+  "description": "Candidate Test for Project42",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedash52/Project42-CandidateTest.git"
+  },
+  "author": "Daniel Nash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thedash52/Project42-CandidateTest/issues"
+  },
+  "homepage": "https://github.com/thedash52/Project42-CandidateTest#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
