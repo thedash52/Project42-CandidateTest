@@ -1,0 +1,28 @@
+<a href="/">&#8592; Home</a>
+<div class="container full-size pt-5">
+    <div class="row mt-5 mb-0 bg-secondary rounded-top">
+        <div class="col mt-5">
+            <form #calcForm="ngForm">
+                <div class="form-row justify-content-center mt-5">
+                    <div class="col-6 text-center">
+                        <input name="txtIterations" type="number" class="form-control" placeholder="Number of Cycles" (keyup.enter)="calculateOutput()" [(ngModel)]="iterations">
+                    </div>
+                </div>
+
+                <div class="form-row justify-content-center mt-3">
+                    <div class="col-3 text-center">
+                        <button type="button" class="btn btn-primary btn-lg" (click)="calculateOutput()">Start Calculations</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row justify-content-center pt-5 pb-5 bg-secondary rounded-bottom">
+        <div class="col-10 output-box border rounded text-wrap mb-5">
+            Output:<br>
+            <pre>{{output}}</pre>
+            Total Characters: {{totalChar}}
+        </div>
+    </div>
+</div>
